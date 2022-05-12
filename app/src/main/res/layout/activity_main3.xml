@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="#242734">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".3"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cliente"
+        app:layout_constraintEnd_toStartOf="@id/v2"
+        app:layout_constraintBottom_toTopOf="@id/h2"
+        app:layout_constraintStart_toEndOf="@id/v1"
+        app:layout_constraintTop_toBottomOf="@id/h1"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#424657"
+        android:text="God of War"
+        android:height="50dp"
+        android:width="250dp"
+        app:layout_constraintEnd_toStartOf="@id/v3"
+        app:layout_constraintStart_toEndOf="@id/v2"
+        app:layout_constraintBottom_toTopOf="@id/h2"
+        app:layout_constraintTop_toBottomOf="@id/h1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New and treding"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/h4"
+        app:layout_constraintStart_toEndOf="@id/v1"
+        app:layout_constraintTop_toBottomOf="@id/h3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Of The Year"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/h6"
+        app:layout_constraintStart_toEndOf="@id/v1"
+        app:layout_constraintTop_toBottomOf="@+id/h5"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="167dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:backgroundTint="#424657"
+                app:cardCornerRadius="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/card"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:textColor="@color/white"
+                    android:text="Contra III: The Alien wars"
+                    android:textSize="27dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="250dp"
+                    android:src="@drawable/nintendo"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/windowsclient"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="30dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/andoidos"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="60dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/amarelo"
+                    android:textColor="@color/white"
+                    android:text="Watcht"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="235dp"
+                    android:layout_marginLeft="129dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:backgroundTint="#424657"
+                app:cardCornerRadius="25dp"
+                android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/card"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:textColor="@color/white"
+                android:text="Contra III: The Alien wars"
+                android:textSize="27dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:src="@drawable/nintendo"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/windowsclient"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="30dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/andoidos"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="60dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/amarelo"
+                android:textColor="@color/white"
+                android:text="Watcht"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="235dp"
+                android:layout_marginLeft="129dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:backgroundTint="#424657"
+                app:cardCornerRadius="25dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/card"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:textColor="@color/white"
+                    android:text="Contra III: The Alien wars"
+                    android:textSize="27dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="250dp"
+                    android:src="@drawable/nintendo"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/windowsclient"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="30dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/andoidos"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="60dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/amarelo"
+                    android:textColor="@color/white"
+                    android:text="Watcht"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="235dp"
+                    android:layout_marginLeft="129dp"/>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="534dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card2"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card3"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card4"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card2"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
